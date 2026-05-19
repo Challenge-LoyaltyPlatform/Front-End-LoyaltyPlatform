@@ -205,9 +205,8 @@
     .secao-streak p{
     color: var(--braco);
     }
-    .secao-pet h2{
-    color: var(--braco);
-    }
+   
+   
     .secao-pet p{
     color: var(--braco);
     }
@@ -265,5 +264,52 @@
     display: inline-block;
     margin-bottom: 16px;
     }
+   .barra-container {
+    width: 160px;
+    height: 10px;
+    background: #2a2a3e;
+    border-radius: 999px;
+    overflow: hidden;
+    }
+
+   .barra-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #8E27F2;
+    }
+    .secao-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 2rem;
+  gap: 16px;
+}
+
+.secao-cta h2 {
+  color: var(--braco);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.secao-cta p {
+  color: var(--braco);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.botao-cta {
+  background: var(--roxo);
+  color: var(--braco);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 20px 60px;
+  border-radius: 999px;
+  margin-top: 24px;
+}
+  
+    
 
      
