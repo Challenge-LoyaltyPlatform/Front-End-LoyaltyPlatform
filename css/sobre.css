@@ -95,9 +95,10 @@
     }
     .secao-solucao {
     padding: 60px 80px 60px 350px;
+    align-items: flex-start;
 
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
     gap: 120px;
     }
     .solucao-direita {
@@ -309,7 +310,168 @@
   border-radius: 999px;
   margin-top: 24px;
 }
+@media (max-width: 768px) {
+
   
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+ 
+  .hero {
+    flex-direction: column;
+    padding: 40px 24px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .hero-imagem {
+    margin-top: 0;
+  }
+
+  .hero-imagem img {
+    width: 100%;
+  }
+
+ 
+  .secao-problema {
+    flex-direction: column;
+    padding: 40px 24px;
+    margin-top: 0;
+  }
+
+  .problema-texto {
+    max-width: 100%;
+  }
+
+  .problema-grafico {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  
+  .secao-solucao {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .solucao-direita {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .secao-solucao div {
+    max-width: 100%;
+  }
+
+
+  .secao-ranking {
+    padding: 40px 24px;
+    margin-top: 0;
+  }
+
+  .ranking-conteudo {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .ranking-texto {
+    max-width: 100%;
+  }
+
+  .ranking-card {
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .secao-ranking h2 {
+    white-space: normal;
+    font-size: 1.5rem;
+  }
+
+  
+  .secao-streak {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+
+  .streak-texto {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .streak-card {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+
+  .secao-pet {
+    flex-direction: column;
+    padding: 40px 24px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .pet-texto {
+    max-width: 100%;
+  }
+
+  .pet-card {
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+ 
+  .secao-cta {
+    padding: 60px 24px;
+  }
+
+  .secao-cta h2 {
+    font-size: 1.4rem;
+  }
+
+  .botao-cta {
+    padding: 16px 40px;
+    font-size: 1rem;
+  }
+
+  
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 24px;
+  }
+
+  .footer-direita nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+  main {
+    overflow-x: hidden;
+  }
+
+}
     
 
      
