@@ -95,9 +95,10 @@
     }
     .secao-solucao {
     padding: 60px 80px 60px 350px;
+    align-items: flex-start;
 
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
     gap: 120px;
     }
     .solucao-direita {
