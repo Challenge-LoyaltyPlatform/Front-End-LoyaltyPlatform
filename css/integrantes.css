@@ -1,3 +1,9 @@
+/* =============================================
+   css/integrantes.css
+   Estilos da página de Integrantes
+   Responsivo: 320px até 2560px+
+   ============================================= */
+
 /* --- Seção principal --- */
 .integrantes-section {
     display: flex;
@@ -51,13 +57,18 @@
     border-color: var(--roxo);
     box-shadow: 0 0 24px rgba(95, 55, 245, 0.25);
 }
+
+/* --- Foto do membro ---
+   align-self: stretch garante que a imagem ocupe
+   100% da largura do card, ignorando o align-items: center do pai */
 .membro-foto {
     width: 100%;
     height: 240px;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: cover;          /* preenche o espaço sem distorcer */
+    object-position: center top; /* foca na parte superior (rosto) */
     display: block;
-    background-color: #0f0f22; /* fallback enquanto foto não é adicionada */
+    align-self: stretch;        /* estica até as bordas do card */
+    background-color: #0f0f22;  /* fallback enquanto foto não é adicionada */
 }
 
 /* --- Área de texto e ícones --- */
@@ -70,18 +81,21 @@
     width: 100%;
 }
 
+/* --- Nome do membro --- */
 .membro-nome {
     color: var(--branco);
     font-size: 1.1rem;
     font-weight: 700;
 }
 
+/* --- RM do membro --- */
 .membro-rm {
     color: rgba(233, 234, 241, 0.5);
     font-size: 0.85rem;
     font-weight: 400;
 }
 
+/* --- Links de redes sociais --- */
 .membro-links {
     display: flex;
     gap: 16px;
@@ -110,10 +124,65 @@
     fill: currentColor;
 }
 
-@media (max-width: 768px) {
+
+/* =============================================
+   RESPONSIVIDADE COMPLETA
+   320px → 2560px+
+   ============================================= */
+
+/* --- Celulares pequenos: até 480px --- */
+@media (max-width: 480px) {
+    .integrantes-section {
+        padding: 40px 16px 60px;
+    }
+
+    .integrantes-titulo {
+        font-size: 1.5rem;
+    }
+
+    .integrantes-subtitulo {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+
     .integrantes-grid {
         grid-template-columns: 1fr;
-        max-width: 420px;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .membro-foto {
+        height: 200px;
+    }
+
+    .membro-nome {
+        font-size: 1rem;
+    }
+
+    /* Footer empilhado no mobile */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 24px;
+        gap: 24px;
+    }
+
+    .footer-direita nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+}
+
+/* --- Celulares médios/grandes: 481px – 767px --- */
+@media (min-width: 481px) and (max-width: 767px) {
+    .integrantes-section {
+        padding: 48px 20px 64px;
     }
 
     .integrantes-titulo {
@@ -125,41 +194,83 @@
         margin-bottom: 40px;
     }
 
+    .integrantes-grid {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        gap: 24px;
+    }
+
     .membro-foto {
-        height: 200px;
+        height: 220px;
     }
 }
 
-@media (max-width: 480px) {
+/* --- Tablets: 768px – 1023px --- */
+@media (min-width: 768px) and (max-width: 1023px) {
     .integrantes-section {
-        padding: 40px 16px 60px;
+        padding: 56px 32px 72px;
     }
 
-    .integrantes-titulo {
-        font-size: 1.5rem;
+    .integrantes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        max-width: 720px;
     }
 
     .membro-foto {
-        height: 180px;
+        height: 210px;
+    }
+}
+
+/* --- Laptops: 1024px – 1279px --- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .integrantes-grid {
+        gap: 28px;
+        max-width: 800px;
+    }
+
+    .membro-foto {
+        height: 230px;
+    }
+}
+
+/* --- Telas grandes: 1536px – 1919px --- */
+@media (min-width: 1536px) and (max-width: 1919px) {
+    .integrantes-section {
+        padding: 80px 40px 100px;
+    }
+
+    .integrantes-grid {
+        max-width: 960px;
+        gap: 36px;
+    }
+
+    .membro-foto {
+        height: 270px;
+    }
+}
+
+/* --- Ultrawide: 1920px+ --- */
+@media (min-width: 1920px) {
+    .integrantes-section {
+        padding: 100px 40px 120px;
+    }
+
+    .integrantes-grid {
+        max-width: 1100px;
+        gap: 40px;
+    }
+
+    .membro-foto {
+        height: 320px;
     }
 
     .membro-nome {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-     .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 24px;
-    gap: 24px;
-  }
 
-  .footer-direita nav {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  main {
-    overflow-x: hidden;
-  }
+    .membro-links svg {
+        width: 26px;
+        height: 26px;
+    }
 }
