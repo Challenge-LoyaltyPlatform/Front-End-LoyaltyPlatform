@@ -10,7 +10,7 @@
     --rosa: #FC3E8E;
     --laranja: #FC952E;
     --preto: #08081A;
-    --braco: #E9EAF1;
+    --branco: #E9EAF1;
     --cinza-navegacao: #13142A;
      --ciano: #00e5cc;
 
@@ -64,7 +64,7 @@ body {
 
     .menu li a {
         text-decoration: none;
-        color: var(--braco);
+        color: var(--branco);
     }
 
     #nav-active{
@@ -122,7 +122,7 @@ body {
     }
   
     .conteúdo-principal h1 {
-     color: var(--braco);
+     color: var(--branco);
     }
 
     .sobre-nos {
@@ -136,7 +136,7 @@ body {
     .sobre-nos h1 {
         margin-right: 30%;
         align-items: center;
-        color: var(--braco);
+        color: var(--branco);
     }
 
     .sobre-nos p {
@@ -145,7 +145,7 @@ body {
         margin-right: 190px;
         margin-top: 10px;
         font-size: large;
-        color: var(--braco);
+        color: var(--branco);
     }
 
 
@@ -161,8 +161,8 @@ body {
 
     .feature-card {
         background-color: var(--cinza-navegacao);
-        color: var(--braco);
-        border: 0.5px solid var(--braco);
+        color: var(--branco);
+        border: 0.5px solid var(--branco);
         border-radius: 10px;
         text-align: center;
         width: 280px;        
@@ -205,7 +205,7 @@ body {
         border-radius: 10px;
         background-color: var(--roxo);
         padding: 30px 30px 30px 30px;
-        color: var(--braco)
+        color: var(--branco)
         
     }
 
