@@ -1,8 +1,3 @@
-/* =============================================
-   css/integrantes.css
-   Estilos específicos da página de Integrantes
-   ============================================= */
-
 /* --- Seção principal --- */
 .integrantes-section {
     display: flex;
@@ -10,12 +5,12 @@
     align-items: center;
     padding: 60px 24px 80px;
     text-align: center;
-    color: var(--cinza-claro);
+    color: var(--branco);
 }
 
 /* --- Título da seção --- */
 .integrantes-titulo {
-    color: var(--cinza-claro);
+    color: var(--branco);
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 24px;
@@ -23,7 +18,7 @@
 
 /* --- Subtítulo descritivo --- */
 .integrantes-subtitulo {
-    color: var(--cinza-claro);
+    color: var(--branco);
     font-size: 1rem;
     line-height: 1.7;
     max-width: 560px;
@@ -76,7 +71,7 @@
 }
 
 .membro-nome {
-    color: var(--cinza-claro);
+    color: var(--branco);
     font-size: 1.1rem;
     font-weight: 700;
 }
@@ -97,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cinza-claro);
+    color: var(--branco);
     opacity: 0.7;
     transition: opacity 0.2s ease, color 0.2s ease;
     text-decoration: none;

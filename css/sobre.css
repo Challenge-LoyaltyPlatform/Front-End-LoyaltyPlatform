@@ -12,12 +12,12 @@
     margin-top: -300px;
     }
     .hero-texto h1 {
-    color: var(--braco);
+    color: var(--branco);
     font-size: 2rem;
     }
 
     .hero-texto p {
-    color: var(--braco);
+    color: var(--branco);
     }
 
     .hero-imagem img {
@@ -45,7 +45,7 @@
     margin-bottom: 16px;
     }
     .problema-texto h2{
-    color: var(--braco);
+    color: var(--branco);
     font-size: 2rem;
 
     }
@@ -54,7 +54,7 @@
     }
 
     .problema-texto p{
-    color: var(--braco);
+    color: var(--branco);
     }
     .secao-problema {
     display: flex;
@@ -110,7 +110,7 @@
    .secao-solucao h2 {
     max-width: 400px;
     font-size: 2rem;
-    color: var(--braco);
+    color: var(--branco);
     }
 
     .secao-solucao div {
@@ -123,7 +123,7 @@
     }
 
     .secao-solucao p{
-    color: var(--braco);
+    color: var(--branco);
     
     }
     #label-solucao {
@@ -161,12 +161,12 @@
     height: auto;
     }
     .secao-ranking h2 {
-    color: var(--braco);
+    color: var(--branco);
     font-size: 2rem;
     white-space: nowrap;
     }
     .secao-ranking p{
-    color: var(--braco);
+    color: var(--branco);
     }
     #label-ranking{
     color: var(--roxo);
@@ -204,12 +204,12 @@
     font-size: 2rem;
     }
     .secao-streak p{
-    color: var(--braco);
+    color: var(--branco);
     }
    
    
     .secao-pet p{
-    color: var(--braco);
+    color: var(--branco);
     }
     .secao-pet {
     display: flex;
@@ -249,7 +249,7 @@
     }
 
     .pet-engajamento {
-    color: var(--braco);
+    color: var(--branco);
     margin-top: 8px;
     }
     .secao-pet h2{
@@ -288,21 +288,21 @@
 }
 
 .secao-cta h2 {
-  color: var(--braco);
+  color: var(--branco);
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
 
 .secao-cta p {
-  color: var(--braco);
+  color: var(--branco);
   font-size: 1rem;
   margin: 0;
 }
 
 .botao-cta {
   background: var(--roxo);
-  color: var(--braco);
+  color: var(--branco);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
