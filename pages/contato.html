@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <!-- Fonte Sora do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="icon" href="/assets/FAVICON.svg">
+    <title>Contato | Loyalty Platform</title>
+
+    <!-- CSS global e CSS específico desta página -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contato.css">
+
+    <link rel="icon" href="../assets/FAVICON.svg">
 </head>
+
 <body>
-     <nav>
-        <a href="../index.html">Loyalty Platform</a>
-        <ul>
-            <li><a href="/pages/integrantes.html">Integrates</a> </li>
-            <li><a href="/pages/sobre.html">Sobre</a></li>
-            <li><a href="/pages/faq.html">FAQ</a></li>
-            <li><a href="/pages/contato.html">Contato</a></li>
+
+    <!-- ========================
+         NAVBAR
+    ========================= -->
+    <nav class="navbar">
+        <a class="logo" href="../index.html">
+            <img src="../assets/LOGO POSITIVA.svg" alt="Logo Loyalty Platform">
+        </a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre.html">Sobre</a></li>
+            <li><a href="../pages/integrantes.html">Integrantes</a></li>
+            <li><a href="../pages/faq.html">Dúvidas</a></li>
+            <li><a href="../pages/contato.html" id="nav-active">Contato</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Entre em contato</h1>
-        <p>Fale com a gente ou envie uma mensagem</p>
-    </header>
-
-
     <main>
-        
-         <!-- Seção de informações -->
-        <section>
-            <h2>Informações para contato</h2>
-            <p></p>
+
+        <!-- ========================
+             SEÇÃO DE CONTATO
+        ========================= -->
+        <section class="contato-section">
+
+            <!-- Título principal -->
+            <h1 class="contato-titulo">
+                Tem alguma dúvida<br>
+                sobre a <span class="destaque-rosa">Loyalty Platform?</span>
+            </h1>
+
+            <!-- Badge / chamada -->
+            <span class="contato-badge">Fale com a gente!</span>
+
+            <!-- Formulário de contato -->
+            <div class="contato-form-wrapper">
+
+                <div class="contato-campo">
+                    <label class="contato-label" for="nome">NOME COMPLETO</label>
+                    <input
+                        class="contato-input"
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="SEU NOME"
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div class="contato-campo">
+                    <label class="contato-label" for="email">E-MAIL</label>
+                    <input
+                        class="contato-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                    >
+                </div>
+
+                <div class="contato-campo">
+                    <label class="contato-label" for="mensagem">MENSAGEM</label>
+                    <textarea
+                        class="contato-textarea"
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Escreva sua mensagem aqui..."
+                        rows="6"
+                    ></textarea>
+                </div>
+
+                <!-- Botão de envio -->
+                <button class="contato-btn" id="btn-enviar" type="button">
+                    Enviar mensagem!
+                </button>
+
+            </div>
+
         </section>
-        
 
+        <!-- ========================
+             TOAST DE CONFIRMAÇÃO
+             (controlado pelo contato.js)
+        ========================= -->
+        <div class="toast" id="toast" aria-live="polite">
+            <span class="toast-icone">✓</span>
+            <p class="toast-texto">Mensagem enviada com sucesso!</p>
+        </div>
 
+        <!-- ========================
+             FOOTER
+        ========================= -->
+        <footer class="footer">
+            <div class="footer-esquerda">
+                <img src="../assets/LOGO PRINCIPAL.svg" alt="Loyalty Platform">
+            </div>
+
+            <div class="footer-centro">
+                <p>A Loyalty Platform transforma o engajamento dos seus usuários em recompensas reais, por meio de
+                    gamificação personalizada — sem precisar construir essa estrutura do zero.</p>
+            </div>
+
+            <div class="footer-direita">
+                <nav>
+                    <p class="footer-nav-titulo">Navegação:</p>
+                    <a href="../pages/sobre.html">Sobre</a>
+                    <a href="../pages/integrantes.html">Integrantes</a>
+                    <a href="../pages/faq.html">FAQ</a>
+                    <a href="../pages/contato.html">Contatos</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Loyalty Platform · FIAP · Challenge 1TDSPX</p>
+            </div>
+        </footer>
     </main>
-    
+    <script src="../contato.js"></script>
 </body>
 </html>
