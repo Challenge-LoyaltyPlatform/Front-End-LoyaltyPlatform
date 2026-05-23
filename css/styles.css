@@ -77,138 +77,8 @@ body {
     .logo{
         margin-left: 50px;
     }
-
-    /*responsividade navbar*/
-
-    @media (max-width: 768px) {
-        .navbar {
-            width: 90%;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px auto;
-            padding: 16px 20px;
-        }
-
-        .logo {
-            margin-left: 0;
-        }
-
-        .menu {
-            margin-right: 0;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .menu {
-            gap: 12px;
-        }
-
-        .menu li a {
-            font-size: 0.85rem;
-        }
-    }
-
-
-    /*css-homepage*/
-    .conteúdo-principal{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        padding: 130px;
-    }
-  
-    .conteúdo-principal h1 {
-     color: var(--branco);
-    }
-
-    .sobre-nos {
-         display: flex;
-        flex-direction: column;
-        align-items: center;
-
-         gap: 20px;
-    }
-
-    .sobre-nos h1 {
-        margin-right: 30%;
-        align-items: center;
-        color: var(--branco);
-    }
-
-    .sobre-nos p {
-        max-width: 500px;
-        line-height: 1.5;
-        margin-right: 190px;
-        margin-top: 10px;
-        font-size: large;
-        color: var(--branco);
-    }
-
-
-    .card-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        width: 100%;             
-        padding: 40px 0px;
-    }
-
-    .feature-card {
-        background-color: var(--cinza-navegacao);
-        color: var(--branco);
-        border: 0.5px solid var(--branco);
-        border-radius: 10px;
-        text-align: center;
-        width: 280px;        
-        height: 320px;       
-        padding: 32px 24px;
-       
-    }
-
-    .feature-card p {
-        margin-top: 60px;
-    }
-
-    .feature-card ul {
-    display: inline-block; 
-    text-align: left;      
-    padding-left: 20px;
-    gap: 10px;
-    }
-
-    #titulo-card{ 
-        margin: auto;
-        color: var(--roxo);
-        
-    }
-
-    
-    .botao-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-        margin-bottom: 80px;
-        }
-
-
-    .botao {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        border: 5px var(--roxo)  solid;
-        border-radius: 10px;
-        background-color: var(--roxo);
-        padding: 30px 30px 30px 30px;
-        color: var(--branco)
-        
-    }
-
+   
+    /* degrade global */
     #degrade{
          background: linear-gradient(to right, #ff6a00, #cc00ff); 
         -webkit-background-clip: text;
@@ -294,135 +164,62 @@ body {
     color: var(--rosa);
     }
 
-    
-  /* ====== RESPONSIVIDADE HOMEPAGE ===== */
+     .botao-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 80px;
+        }
 
-@media (max-width: 1024px) {
-
-    .conteúdo-principal {
-        flex-direction: column;
-        padding: 80px 40px;
-        text-align: center;
-    }
-
-    .sobre-nos h1 {
-        margin-right: 0;
-    }
-
-    .sobre-nos p {
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .card-section {
-        padding: 30px 20px;
-    }
-
-    .footer {
-        gap: 40px;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .conteúdo-principal {
-        padding: 60px 20px;
-        gap: 50px;
-    }
-
-    .conteúdo-principal img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-    }
-
-    .sobre-nos {
-        width: 100%;
-    }
-
-    .sobre-nos h1 {
-        text-align: center;
-    }
-
-    .sobre-nos p {
-        max-width: 100%;
-        font-size: 1rem;
-        line-height: 1.8;
-    }
-
-    .feature-card {
-        width: 90%;
-        max-width: 320px;
-        height: auto;
-    }
-
-    .feature-card p {
-        margin-top: 30px;
-    }
-
-    .botao-wrapper {
-        margin-top: 50px;
-        margin-bottom: 60px;
-        padding: 0 20px;
-    }
 
     .botao {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        border: 5px var(--roxo)  ;
+        border-radius: 10px;
+        background-color: var(--roxo);
+        padding: 30px 30px 30px 30px;
+        color: var(--branco)
+        
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
+   .botao:hover{
+        background-color: #4a26d4;
+        box-shadow: 0 0 24px rgba(95, 55, 245, 0.5);
+        transform: scale(0.98);
+   }
+
+    /*responsividade navbar*/
+
+    @media (max-width: 768px) {
+        .navbar {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            padding: 16px 20px;
+        }
+
+        .logo {
+            margin-left: 0;
+        }
+
+        .menu {
+            margin-right: 0;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
-    .footer-esquerda,
-    .footer-centro,
-    .footer-direita {
-        max-width: 100%;
+    @media (max-width: 480px) {
+        .menu {
+            gap: 12px;
+        }
+
+        .menu li a {
+            font-size: 0.85rem;
+        }
     }
 
-    .footer-direita nav {
-        border-left: none;
-        padding-left: 0;
-        align-items: center;
-    }
-
-    .footer-bottom {
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .conteúdo-principal {
-        padding: 40px 16px;
-    }
-
-    .sobre-nos p {
-        font-size: 0.95rem;
-    }
-
-    .feature-card {
-        padding: 24px 18px;
-    }
-
-    .feature-card ul {
-        padding-left: 16px;
-    }
-
-    .botao {
-        padding: 20px;
-        font-size: 0.95rem;
-    }
-
-    .footer-esquerda img {
-        width: 200px;
-    }
-
-}
